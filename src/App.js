@@ -50,7 +50,7 @@ function App() {
       <main className="flex min-h-screen flex-col items-center justify-between p-10 font-mono">
         <div className="z-10 max-w-5xl w-full">
           <p>
-            Ex Controller
+            Ex Controller Local
           </p>
         </div>
         
