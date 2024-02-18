@@ -1,12 +1,11 @@
 // math.js
 export function send_post(body, timeOfLastSend) {
-  console.log(process.env.REACT_APP_NTFY_URL)
   if (Date.now() - timeOfLastSend > 25){
-      fetch(`${process.env.REACT_APP_NTFY_URL}`,{
+      fetch("http://nuc-homeserver:81/x",{
         method: "POST",
         body: body,
         headers: {
-            "Authorization": `Bearer ${process.env.REACT_APP_NTFY_TOKEN}`
+            "Authorization": `Bearer tk_mfzjlla9otq9ipggd0u0w490abu9i`
         }
       })
       return Date.now()
