@@ -1,5 +1,6 @@
 // math.js
 export function send_post(body, timeOfLastSend) {
+  console.log(process.env.NTFY_URL)
   if (Date.now() - timeOfLastSend > 25){
       fetch(`${process.env.NTFY_URL}`,{
         method: "POST",
