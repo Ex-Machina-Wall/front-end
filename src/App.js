@@ -12,8 +12,6 @@ import Wheel from '@uiw/react-color-wheel';
 
 import { send_post } from './endpoints';
 
-require('dotenv').config();
-
 function App() {
   const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const theme = prefersDarkMode ? darkTheme : lightTheme;
