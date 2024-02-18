@@ -7,7 +7,8 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
-    env_file: stack.env
     environment:
       - NODE_ENV=production
+      - NTFY_TOKEN=$NTFY_TOKEN
+      - NTFY_URL=$NTFY_URL
     restart: unless-stopped
