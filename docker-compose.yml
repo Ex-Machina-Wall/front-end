@@ -9,6 +9,6 @@ services:
       - .:/app
     environment:
       - NODE_ENV=production
-      - NTFY_TOKEN=$NTFY_TOKEN
-      - NTFY_URL=$NTFY_URL
+      - REACT_APP_NTFY_TOKEN=$REACT_APP_NTFY_TOKEN
+      - REACT_APP_NTFY_URL=$REACT_APP_NTFY_URL
     restart: unless-stopped
