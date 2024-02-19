@@ -59,13 +59,13 @@ function App() {
           <div className="flex flex-row w-min mx-auto">
             <div className="flex-1">
               <Fragment>
-                <Wheel color={secondaryHSVA} onChange={handleSecondaryColorChange}/>
+                <Wheel color={primaryHSVA} onChange={handlePrimaryColorChange}/>
               </Fragment>
             </div>
             <div>
             <Slider 
               defaultValue={100} step={1} min={0} max={100} valueLabelDisplay='auto' orientation="vertical"
-              name="SET_SECONDARY_BRIGHTNESS"
+              name="SET_PRIMARY_BRIGHTNESS"
               onChange={handleSliderChange}
             ></Slider>
             </div>
@@ -77,13 +77,13 @@ function App() {
           <div className="flex flex-row mx-auto w-min">
             <div className="flex-1">
             <Fragment>
-              <Wheel color={primaryHSVA} onChange={handlePrimaryColorChange}/>
+              <Wheel color={secondaryHSVA} onChange={handleSecondaryColorChange}/>
             </Fragment>
             </div>
             <div>
             <Slider
               defaultValue={100} step={1} min={0} max={100} valueLabelDisplay='auto' orientation="vertical"
-              name="SET_PRIMARY_BRIGHTNESS"
+              name="SET_SECONDARY_BRIGHTNESS"
               onChange={handleSliderChange}
             ></Slider>
             </div>
