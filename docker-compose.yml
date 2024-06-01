@@ -3,7 +3,7 @@ services:
   react-app:
     build: .
     ports:
-      - "80:80"
+      - "82:80"
     volumes:
       - /app/node_modules
       - .:/app
